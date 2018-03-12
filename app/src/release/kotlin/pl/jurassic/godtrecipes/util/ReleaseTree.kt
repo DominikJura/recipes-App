@@ -1,7 +1,6 @@
-package com.hifamily.hidaddy.util
+package pl.jurassic.godtrecipes.util
 
 import android.util.Log
-import com.crashlytics.android.Crashlytics
 import timber.log.Timber
 
 class ReleaseTree : Timber.Tree() {
@@ -20,7 +19,7 @@ class ReleaseTree : Timber.Tree() {
         }
 
         if (priority == Log.ERROR && t != null) {
-            Crashlytics.logException(t)
+            //TODO crashilitcs log
         }
 
         if (message.length < MAX_LOG_LENGTH) {
@@ -56,7 +55,7 @@ class ReleaseTree : Timber.Tree() {
 
     private fun logToCrashlyics(priority: Int, tag: String?, message: String) {
         if (priority == Log.ERROR) {
-            Crashlytics.log(priority, tag ?: UNKNOWN_TAG, message)
+            //TODO crashilitcs log
         }
     }
 }

@@ -1,10 +1,10 @@
-package com.hifamily.hidaddy.util.injection
+package pl.jurassic.godtrecipes.util.injection
 
-import com.hifamily.hidaddy.util.injection.modules.BaseNetworkModule
 import dagger.Module
 import dagger.Provides
 import okhttp3.Cache
 import okhttp3.OkHttpClient
+import pl.jurassic.godtrecipes.util.injection.modules.BaseNetworkModule
 import javax.inject.Singleton
 
 @Module

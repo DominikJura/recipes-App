@@ -1,7 +1,7 @@
 package pl.jurassic.godtrecipes
 
 import com.squareup.leakcanary.LeakCanary
-import timber.log.Timber
+    import timber.log.Timber
 
 class GodtApp : BaseGodtApp() {
 
